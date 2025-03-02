@@ -27,7 +27,7 @@ jobs:
         ANDROID_NDK_HOME=./android-ndk-r23b CXX=i686-linux-android31-clang++ ./build.sh bin/compiled_script_x86
         ANDROID_NDK_HOME=./android-ndk-r23b CXX=x86_64-linux-android31-clang++ ./build.sh bin/compiled_script_x64
     - name: Upload release
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-script
         path: bin
